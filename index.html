@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure story game small</title>
+    <link rel="stylesheet" href="style.css"></link>
+</head>
+<body>
+    <div class="container">
+        <div class="game_title">
+        <h2>Adventure story game</h2>
+        </div>
+            <div class="game_content">
+        <!-- This is where the player gets the text-->
+                <div class="game">
+                    <div id="stats">
+                        <span class="stat">XP: <span id="xpText">0</span></span>
+                        <span class="stat">Health: <span id="healthText">100</span></span>
+                        <span class="stat">Gold: <span id="goldText">50</span></span>
+                      </div>
+                      <div id="monsterStats" style="display: none;">
+                        <p>Monster: <span id="monsterName"></span></p>
+                        <p>Health: <span id="monsterHealth"></span></p>
+                      </div>
+                      <div id="text">
+                        Welcome to Dragon Repeller. You must defeat the dragon that is preventing people from leaving the town. You are in the town square. Where do you want to go? Use the buttons above.
+                      </div>
+                </div>
+            </div>
+                <div class="options">
+                    <button id="option1">Store</button>
+                    <button id="option2">Dungeon</button>
+                    <button id="option3">Fight Dragon</button>
+                </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
