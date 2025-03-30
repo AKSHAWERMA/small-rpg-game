@@ -1,6 +1,6 @@
 let xp = 0;
 let health = 100;
-let gold = 500;
+let gold = 50;
 let currentWeaponItem = 0;
 let fighting;
 let monsterHealth;
@@ -49,8 +49,8 @@ const monster = [
     },
     {
         name: "Dragon",
-        level: 20,
-        health: 300
+        level: 90,
+        health: 700
     }
 ];
 
@@ -63,7 +63,7 @@ const locations = [
     },
     {
       name: "store",
-      "button text": ["Buy 10 health (10 gold)", "Buy weapon (30 gold)", "Go to town square"],
+      "button text": ["Buy 5 health (10 gold)", "Buy weapon (30 gold)", "Go to town square"],
       "button functions": [buyHealth, buyWeapon, goTown],
       text: "You enter the store."
     },
@@ -133,7 +133,7 @@ function fightDragon(){
 function buyHealth(){
   if(gold >= 10){
     gold -= 10;
-    health += 10;
+    health += 5;
     goldText.innerText = gold;
     healthText.innerText = health;
   }else{
@@ -232,6 +232,7 @@ function lose() {
 
 function winGame() {
   update(locations[6]);
+  text.innerText = "Congratulations you GAY"
 }
 
 function restart() {
