@@ -27,7 +27,6 @@ body{
 
 .game{
     width: 90%;
-    height: 80%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -49,13 +48,14 @@ body{
     margin-bottom: 2rem;
 }
 
-#option1, #option2, #option3{
+#button1, #button2, #button3{
     width: 100px;
     height: 30px;
     background: linear-gradient(0deg, #000000, #1d1d1d);
     border: 1px solid white;
     color: white;
     border-radius: 2px;
+    cursor: grab;
 }
 .game_title{
     color: white;
@@ -71,10 +71,24 @@ body{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: aquamarine;
+    background-color: rgb(20, 59, 110);
     padding: 1rem;
 }
 
 #text{
-    background-color: seagreen;
+    background-color: rgb(5, 4, 0);
+    color: red;
+    font-size: 1.2rem;
+    padding: 20px;
+    border: 2px solid rgb(99, 2, 2);
+}
+
+#monsterStats{
+    position: relative;
+    height: 50vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(45deg, orange, blue);
+    font-size: 1.5rem;
 }
